@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="tabela" prefHeight="418.0" prefWidth="586.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifrs.canoas.cristina.villasboas.controller.CadastroFrutaController">
+   <children>
+      <TableView fx:id="tabelaZ" layoutX="7.0" layoutY="176.0" prefHeight="200.0" prefWidth="592.0">
+        <columns>
+          <TableColumn fx:id="codigoAlimentoCol" prefWidth="95.0" text="CÓDIGO" />
+          <TableColumn fx:id="nomeAlimentoCol" prefWidth="121.0" text="NOME" />
+            <TableColumn fx:id="validadeAlimentoCol" prefWidth="188.0" text="VALIDADE" />
+            <TableColumn fx:id="pesoAlimentoCol" prefWidth="160.0" text="PESO" />
+        </columns>
+      </TableView>
+      <Label layoutX="22.0" layoutY="10.0" text="CÓDIGO" />
+      <Label layoutX="21.0" layoutY="30.0" text="NOME" />
+      <TextField fx:id="codigo" layoutX="116.0" layoutY="6.0" />
+      <TextField fx:id="nome" layoutX="116.0" layoutY="26.0" />
+      <Button layoutX="14.0" layoutY="138.0" mnemonicParsing="false" onAction="#cadastrarFruta" prefHeight="25.0" prefWidth="142.0" text="CADASTRAR" />
+      <Button layoutX="156.0" layoutY="138.0" mnemonicParsing="false" onAction="#deletarProduto" prefHeight="25.0" prefWidth="118.0" text="APAGAR" />
+      <Button layoutX="450.0" layoutY="6.0" mnemonicParsing="false" onAction="#btVoltar" prefHeight="25.0" prefWidth="142.0" text="VOLTAR" />
+      <Button layoutX="274.0" layoutY="138.0" mnemonicParsing="false" onAction="#editarProduto" prefHeight="25.0" prefWidth="155.0" text="EDITAR" />
+      <Button layoutX="450.0" layoutY="26.0" mnemonicParsing="false" onAction="#editarFim" prefHeight="25.0" prefWidth="142.0" text="CONCLUIR EDIÇÃO" />
+      <Label layoutX="18.0" layoutY="51.0" text="VALIDADE" />
+      <Label layoutX="18.0" layoutY="76.0" text="PESO" />
+      <TextField fx:id="validade" layoutX="116.0" layoutY="47.0" />
+      <TextField fx:id="peso" layoutX="116.0" layoutY="72.0" />
+   </children>
+</AnchorPane>
